@@ -63,8 +63,9 @@
 
 %%%%%%%%%%%%%%%%% SLAJD TYTUŁOWY
 
-\title[Skrócony Wzór]{Wzór prezentacji na tle KoNaRowym } %tytuł prezentacji, skrócony w razie za długiej nazwy nie mieszczącej się w stopce
-\author[Skrócony Autor]{Michał Swoboda} %autor, skrócony autor w razie za długiej nazwy nie mieszczącej się w stopce
+\title{Rewizja kodu}
+\subtitle{Nieoczywista sztuka konstruktywnej krytyki}
+\author{Jacek Jankowski}
 \date{\today}  %data
 
 %%%%%%%%%%%%%%%%%
@@ -74,64 +75,64 @@
 \begin{document}
 
 \begin{frame}
-\titlepage
-\end{frame} 
+	\titlepage
+\end{frame}
 
 \begin{frame}
-\frametitle{Plan prezentacji}
-\tableofcontents
+	\frametitle{Plan prezentacji}
+	\tableofcontents
 \end{frame}
 
 \section{Wstęp}
-\subsection{Pierwszy merytoryczny slajd}
-\begin{frame} %początek sladjdu
-\frametitle{Nazwa Slajdu}
-\framesubtitle{Podnazwa slajdu} %Opcjonalnie
 
-\centering Zawartość tekstowa
-		
-\end{frame}%koniec slajdu
-
-\subsection{Drugi merytoryczny slajd}
+\subsection{Branżowy mit introwertyka}
 \begin{frame}
-\frametitle{Pojawianie się puntków}
-\framesubtitle{Bardzo efektowne}
-	\begin{itemize}
-		\item Pierwszy punkt
-		\pause
-		\item Drugi punkt
-		\pause
-		\item Trzeci punkt
-	\end{itemize}
+	\frametitle{Oczekiwania}
+	\begin{center}
+		\begin{minipage}{0.45\textwidth}
+			\includegraphics[width=\textwidth]{figure/skryba.jpg}
+		\end{minipage}
+		\begin{minipage}{0.45\textwidth}
+			\includegraphics[width=\textwidth]{figure/programista.jpg}
+		\end{minipage}
+	\end{center}
+	\note{W poszwechnym odczuciu programista jest współczesnym odpowiednikiem skryby.}
+	\note{Pracuje sam, w wielkim skupieniu, od początku do końca.}
+	\note{Stanowisko idealne dla introwertyków, autystyków, nerdów etc.}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Rzeczywistość}
+	\begin{center}
+		\begin{minipage}{0.45\textwidth}
+			\includegraphics[width=\textwidth]{figure/drukarnia.jpg}
+		\end{minipage}
+		\begin{minipage}{0.45\textwidth}
+			\includegraphics[width=\textwidth]{figure/disappointment.jpg}
+		\end{minipage}
+	\end{center}
+	\note{Podstawowym problemem była czasochłonność.}
+	\note{Drukarnie i dobrze zorganizowane zespoły są szybsze niż jeden człowiek :(}
+	\note{Jeden programista nie jest w stanie zrobić wszystkiego!}
+	\note{Za dużu funkcjonalności do zakodowania.}
+	\note{Jack of all trades, master of none.}
+\end{frame}
+
+\section{Rewizja kodu}
+
+\framecentered{
+	\includegraphics[width=\textwidth]{figure/no_time.jpg}
+	\note{Po co? Przecież to strata czasu i nerwów.}
+	\note{Dodatkowe źródło konfliktów.}
+}
+
 \section{Koniec}
-\subsection{Wstawianie Rysunku}
 \begin{frame}
 	\frametitle{Przepiękna i zjawiskowa}
 	\centering \begin{figure}
-   		       \includegraphics[height=5cm]{figure/balbina.jpg}
-		       \caption{Balbina}
-		       \end{figure}
+		\includegraphics[height=5cm]{figure/balbina.jpg}
+		\caption{Balbina}
+	\end{figure}
 \end{frame}
-
-% Balbina średnia bez tytulariów
-\framecentered{\includegraphics[width=0.7\paperwidth]{figure/balbina.jpg}}
-% Balbina porozciągana ale na całość
-\framecentered{\includegraphics[height=\maxheight,width=\paperwidth]{figure/balbina.jpg}}
-% Balbina dopasowana na wysokość
-\framecentered{\includegraphics[height=\maxheight]{figure/balbina.jpg}}
-% Balbina za duża - zakrywa naczółek
-\framecentered{\includegraphics[width=\paperwidth]{figure/balbina.jpg}}
-
-\subsection{Problemy}
-\begin{frame}
-\frametitle{Pomocy?}
-	\begin{block}{Gdzie szukać porad}
-	Pomocy szukajcie w internecie, to nie jest takie trudne : )
-	\end{block}
-\end{frame}
-	
-	
 
 \end{document}
