@@ -79,19 +79,18 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Plan prezentacji}
-	\tableofcontents
+	\frametitle{Szybka ankieta}
+	\begin{center}
+		\begin{itemize}
+			\item Nigdy nie miałem rewizji.
+			\item Rewizje są obowiązkową częścią procesu.
+			\item Więcej sprawdzam niż sam piszę.
+		\end{itemize}
+	\end{center}
 \end{frame}
 
-\section{Wstęp}
-
 \begin{frame}
-	\centering Ankieta!
-\end{frame}
-
-\subsection{Branżowy mit introwertyka}
-\begin{frame}
-	\frametitle{Oczekiwania}
+	\frametitle{Charakter pracy - oczekiwania}
 	\begin{center}
 		\begin{minipage}{0.45\textwidth}
 			\includegraphics[width=\textwidth]{figure/skryba.jpg}
@@ -106,7 +105,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Rzeczywistość}
+	\frametitle{Charakter pracy - rzeczywistość}
 	\begin{center}
 		\begin{minipage}{0.45\textwidth}
 			\includegraphics[width=\textwidth]{figure/drukarnia.jpg}
@@ -122,8 +121,6 @@
 	\note{Jack of all trades, master of none.}
 \end{frame}
 
-\section{Po co?}
-
 \framecentered{
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figure/no_time.jpg}
 	\note{Po co? Przecież to strata czasu i nerwów.}
@@ -138,19 +135,60 @@
 \end{frame}
 
 \begin{frame}
-	Skąd błędy i dług techniczny?
-	\begin{itemize}
-		\item Zafiskowanie
-		\item Przeoczenie
-		\item Pośpiech
-		\item Niewiedza
-		\item Patologiczny przerost funkcjonalności
-		\item Syndrom Madki
-		\item Czasami po prostu się nie chce...
-	\end{itemize}
+	\frametitle{Przyczyny akumulacji długu}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Zafiskowanie
+				\item Przeoczenie
+				\item Pośpiech
+				\item Niewiedza
+				\item Syndrom Madki
+				\item Czasami po prostu się nie chce...
+				\item Patologiczny przerost źródeł
+				      \begin{itemize}
+					      \item Zbędne wodotryski
+					      \item Martwy kod
+					      \item Duplikacja
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figure/dlug_techniczny.jpg}
+		\end{column}
+	\end{columns}
 \end{frame}
 
-\section{Sztuczki}
+\begin{frame}
+	\frametitle{Jak zacząć?}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item System kontroli wersji
+				\begin{itemize}
+					\item Git
+				\end{itemize}
+				\item Konsensus pośród programistów
+				\item Platforma do recenzowania
+				\begin{itemize}
+					\item Gerrit, GitHub, Bitbucket
+				\end{itemize}
+				\item Ochrona głównej gałęzi
+				\begin{itemize}
+					\item Aplikowanie zmian tylko po review
+					\item Nikt nie może zmieniać zasad
+					\item ... z wyjątkiem DevOps'a, któremu nie zależy na terminach
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{center}
+				\includegraphics[width=0.5\textwidth,keepaspectratio]{figure/podstawy.png}				
+			\end{center}
+		\end{column}
+	\end{columns}
+\end{frame}
+
 \begin{frame}
 	\begin{itemize}
 		\item boty
@@ -160,16 +198,11 @@
 	\end{itemize}
 \end{frame}
 
-\section{Pułapki}
 
 \begin{frame}
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figure/no_comments.png}
 	\note{Nie powinniśmy traktować rewizji jako okazji do pojedynku.}
 	\note{Naszym przeciwnikiem nie jest współpracownik, tylko wstrętne bugi.}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Przytłoczenie}
 \end{frame}
 
 \section{Koniec}
